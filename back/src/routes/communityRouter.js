@@ -29,7 +29,7 @@ communityRouter.get(
 
 // content 삭제
 communityRouter.delete(
-    "/communitycontents/:id/delete",
+    "/communitycontents/:id",
     authJWT,
     communityServiceController.deleteCommunity
 );

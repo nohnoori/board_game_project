@@ -49,7 +49,7 @@ function CommunityContent() {
 
     const handleDelete = async () => {
         try {
-            await Api.delete(`communitycontents/${params.id}/delete`);
+            await Api.delete(`communitycontents/${params.id}`);
             navigate("/community");
         } catch (error) {
             console.log(error);
