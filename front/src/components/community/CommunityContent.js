@@ -23,7 +23,7 @@ function CommunityContent() {
 
     const fetchContentInfo = async (contentId) => {
         try {
-            const res = await Api.get("communitycontents", contentId);
+            const res = await Api.get("community", contentId);
             if (res.data?.userId === userState?._id) {
                 setIsEditable(true);
             } else {
@@ -49,7 +49,7 @@ function CommunityContent() {
 
     const handleDelete = async () => {
         try {
-            await Api.delete(`communitycontents/${params.id}/delete`);
+            await Api.delete(`communitycontent/${params.id}`);
             navigate("/community");
         } catch (error) {
             console.log(error);

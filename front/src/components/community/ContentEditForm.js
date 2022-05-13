@@ -15,7 +15,7 @@ function ContentEditForm({ contents, setContents, setIsEditing, contentId }) {
     const handleEdit = async (e) => {
         e.preventDefault();
         try {
-            await Api.put(`communitycontent/${contentId}`, {
+            await Api.put(`communitycontents/${contentId}`, {
                 title,
                 content,
             });
