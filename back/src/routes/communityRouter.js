@@ -22,21 +22,21 @@ communityRouter.post(
 
 // 선택 content 조회
 communityRouter.get(
-    "/communitycontents/:id",
+    "/community/:id",
     authJWT,
     communityServiceController.getCommunity
 );
 
 // content 삭제
 communityRouter.delete(
-    "/communitycontents/:id",
+    "/communitycontent/:id",
     authJWT,
     communityServiceController.deleteCommunity
 );
 
 // content 수정하기
 communityRouter.put(
-    "/communitycontent/:id",
+    "/communitycontents/:id",
     authJWT,
     communityServiceController.updateContent
 );
