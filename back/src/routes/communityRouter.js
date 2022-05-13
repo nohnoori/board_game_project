@@ -15,7 +15,7 @@ communityRouter.get(
 
 // content 추가하기
 communityRouter.post(
-    "/communitycontents/create",
+    "/communitycontents",
     authJWT,
     communityServiceController.createContents
 );
