@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { sign, refresh } from "../utils/jwt-utils";
 import { UserModel } from "../db/schemas/user";
 import { TokenModel } from "../db/schemas/token";
@@ -205,8 +205,7 @@ class userAuthService {
     //redis 토큰 생성
     static async redisToken({ email }) {
         const user = await UserModel.findOne({ email });
-        const CLIENT_BASE_URL =
-            "http://elice-kdt-ai-4th-team11.elicecoding.com";
+        const CLIENT_BASE_URL = "noderedis";
 
         if (!user) {
             const errorMessage =
@@ -219,7 +218,7 @@ class userAuthService {
         }
 
         const client = createClient({
-            url: `redis://${process.env.REDIS_URL}:6379`,
+            url: `redis://${CLIENT_BASE_URL}:6379`,
         });
 
         client.on("error", (err) => console.log("Redis Client Error", err));
