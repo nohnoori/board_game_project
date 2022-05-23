@@ -1,0 +1,15 @@
+version: '3'
+services:
+  nodeapp: 
+    build: 
+      context: "./back"
+      dockerfile: dockerfile 
+    container_name: "nodeapp" 
+    working_dir: "/app/back" 
+    ports: 
+      - "5001:5001"
+    links: 
+      - "noderedis"
+  noderedis: 
+    image: "redis:3"
+    container_name: "noderedis"
