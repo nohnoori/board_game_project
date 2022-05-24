@@ -3,21 +3,27 @@ services:
   back: 
     build: 
       context: "./back"
-      dockerfile: dockerfile 
+      dockerfile: dockerfile
     container_name: "back" 
     working_dir: "/app/back" 
+    platform: linux/amd64
     ports: 
       - "5001:5001"
     links: 
       - "noderedis"
+    image:
+      "nuri00/back"
   front: 
     build: 
       context: "./front"
       dockerfile: dockerfile 
     container_name: "front" 
+    platform: linux/amd64
     working_dir: "/app/front" 
     ports: 
       - "3000:3000"
+    image:
+      "nuri00/front"
   noderedis: 
     image: "redis:3"
     container_name: "noderedis"
