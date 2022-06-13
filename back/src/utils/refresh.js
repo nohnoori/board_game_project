@@ -32,6 +32,7 @@ const refresh = async (req, res) => {
             };
         }
 
+        //test
         // access token이 디코딩 되면 user_id를 가져와 refresh token을 검증
         const refreshResult = refreshVerify(refreshToken, decoded.id);
 
