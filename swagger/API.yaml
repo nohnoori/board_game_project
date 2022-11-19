@@ -99,7 +99,7 @@ paths:
                             schema:
                                 $ref: "#/components/schemas/CommunityContent"
 
-    /communitycontents/create:
+    /communitycontent:
         post:
             tags:
                 - community
@@ -120,7 +120,7 @@ paths:
                     description: "board생성 성공!"
                     $ref: "#/components/schemas/CommunityContent"
 
-    /communitycontents/{id}:
+    /community/{id}:
         get:
             tags:
                 - community
@@ -135,7 +135,7 @@ paths:
                 "200":
                     $ref: "#/components/schemas/CommunityContent"
 
-    /communitycontents/{id}/delete:
+    /communitycontent/{id}:
         delete:
             tags:
                 - community
@@ -149,7 +149,7 @@ paths:
             responses:
                 "200":
                     $ref: "#/components/schemas/CommunityContent"
-    /communitycontent/{id}:
+    /communitycontents/{id}:
         put:
             tags:
                 - community

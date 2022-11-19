@@ -15,7 +15,7 @@ function ContentAddForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await Api.post("communitycontents/create", {
+            await Api.post("communitycontent", {
                 title,
                 content,
             });

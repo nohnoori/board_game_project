@@ -15,28 +15,28 @@ communityRouter.get(
 
 // content 추가하기
 communityRouter.post(
-    "/communitycontents/create",
+    "/communitycontent",
     authJWT,
     communityServiceController.createContents
 );
 
 // 선택 content 조회
 communityRouter.get(
-    "/communitycontents/:id",
+    "/community/:id",
     authJWT,
     communityServiceController.getCommunity
 );
 
 // content 삭제
 communityRouter.delete(
-    "/communitycontents/:id/delete",
+    "/communitycontent/:id",
     authJWT,
     communityServiceController.deleteCommunity
 );
 
 // content 수정하기
 communityRouter.put(
-    "/communitycontent/:id",
+    "/communitycontents/:id",
     authJWT,
     communityServiceController.updateContent
 );
