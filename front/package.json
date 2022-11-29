@@ -19,7 +19,6 @@
     "chart.js": "^3.7.1",
     "dotenv": "^16.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "gh-pages": "^4.0.0",
     "react": "^18.0.0",
     "react-chartjs-2": "^4.1.0",
     "react-coverflow": "^0.2.20",
@@ -55,5 +54,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://nohnoori.github.io/board_game_project/"
+  "homepage": "https://nohnoori.github.io/board_game_project",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
