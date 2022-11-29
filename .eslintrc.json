@@ -1,10 +1,10 @@
 {
-    "extends": ["plugin:prettier/recommended"],
+    // "extends": ["plugin:prettier/recommended"],
    
-    "plugins": ["prettier"],
-    "eslint.workingDirectories": [ "front" ],
+    // "plugins": ["prettier"],
+    // "eslint.workingDirectories": [ "front","back" ],
    
-    "rules": {
-        "prettier/prettier": "warning"
-    }
+    // "rules": {
+    //     "prettier/prettier": "warning"
+    // }
 }

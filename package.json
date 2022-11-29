@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/nohnoori/board_game_project.git",
   "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^4.0.0"
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
