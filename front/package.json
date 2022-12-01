@@ -54,7 +54,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://nohnoori.github.io/board_game_project/",
+  "homepage": "https://nohnoori.github.io",
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
